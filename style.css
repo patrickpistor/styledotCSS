@@ -148,23 +148,11 @@ body {
   overflow: initial;
 }
 
-.btn {
-  border-radius: 2px;
-  padding: 10px 20px;
-  border-bottom: 4px solid;
-  text-decoration: none;
-}
-
-.btn:active {
-  border-bottom: 0px;
-}
-
 /* GRID */
 .section {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
-  overflow-x:auto
 }
 .col {
 	display: block;
@@ -244,6 +232,28 @@ body {
     display: block;
     padding: 8px 0 8px 16px;
     text-decoration: none;
+}
+
+/* Forms */
+.round {
+  border-radius: 16px;
+}
+
+.btn {
+  border-radius: 2px;
+  padding: 10px 20px;
+  border-bottom: 4px solid;
+  text-decoration: none;
+}
+
+.btn:active {
+  border-bottom: 0px;
+}
+
+.textbox {
+  border: 1px solid #ccc;
+  height: 34px;
+  padding: 6px 12px;
 }
 
 /* Colors */
