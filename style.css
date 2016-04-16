@@ -138,6 +138,8 @@ optgroup {
 	font-weight: bold;
 }
 /* End extract from normalize.css */
+
+/* Default Values */
 html {
 }
 body {
@@ -147,6 +149,15 @@ body {
 	overflow: initial;
 	word-wrap: normal;
 }
+
+/* Helpers */
+.center-block {
+  display: block !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* Grid */
 .section {
 	clear: both;
 	margin: 0px;
@@ -155,7 +166,7 @@ body {
 .col {
 	display: block;
 	float: left;
-	margin-right: 1% 0 1% 1.6%;
+	margin: 1% 0 1% 1.6%;
 }
 .group:before,
 .group:after {
@@ -168,47 +179,47 @@ body {
 .group {
 	zoom: 1;
 }
-.col-1-1 {
-	width: 100%;
+.c-1-1 {
+	width: 97%;
 }
-.col-1-2 {
-	width: 49%;
+.c-1-2 {
+	width: 47%;
 }
-.col-1-3 {
-	width: 33.3332%;
+.c-1-3 {
+	width: 30.3332%;
 }
-.col-2-3 {
-	width: 66.6665%;
+.c-2-3 {
+	width: 63.6665%;
 }
-.col-1-4 {
-	width: 26%;
+.c-1-4 {
+	width: 22%;
 }
-.col-3-4 {
-	width: 75%;
+.c-3-4 {
+	width: 72%;
 }
-.col-1-5 {
-	width: 20%;
+.c-1-5 {
+	width: 19%;
 }
-.col-2-5 {
-	width: 40%;
+.c-2-5 {
+	width: 39%;
 }
-.col-3-5 {
-	width: 60%;
+.c-3-5 {
+	width: 59%;
 }
-.col-4-5 {
-	width: 80%;
+.c-4-5 {
+	width: 79%;
 }
-.col-w-g-s {
+.c-w-g-s {
 	width: 38.2716%;
 }
-.col-w-g-l {
+.c-w-g-l {
 	width: 61.7283%;
 }
 @media only screen and (max-width: 480px) {
 	.col {
 		margin: 1% 0 1% 0%;
 	}
-	.col-1-1, .col-1-2, .col-1-3, .col-2-3, .col-1-4, .col-3-4, .col-1-5, .col-2-5, .col-3-5, .col-4-5, .col-w-g-s, .col-w-g-l {
+	.c-1-1, .c-1-2, .c-1-3, .c-2-3, .c-1-4, .c-3-4, .c-1-5, .c-2-5, .c-3-5, .c-4-5, .c-w-g-s, .c-w-g-l {
 		width: 100%;
 	}
 }
@@ -228,6 +239,131 @@ body {
 	display: block;
 	padding: 8px 0 8px 16px;
 	text-decoration: none;
+}
+
+/* Margin */
+.m-tiny {
+	margin: 2px 4px !important
+}
+.m-small {
+	margin: 4px 8px !important
+}
+.m-medium,.m {
+	margin: 8px 16px !important
+}
+.m-large {
+	margin: 12px 24px !important
+}
+.m-xlarge {
+	margin: 16px 32px !important
+}
+.m-xxlarge {
+	margin: 24px 48px !important
+}
+.m-0 {
+	margin: 0 !important
+}
+.m-2 {
+	margin: 2px !important
+}
+.m-4 {
+	margin: 4px !important
+}
+.m-8 {
+	margin: 8px !important
+}
+.m-12 {
+	margin: 12px !important
+}
+.m-16 {
+	margin: 16px !important
+}
+.m-24 {
+	margin: 24px !important
+}
+.m-32 {
+	margin: 32px !important
+}
+.m-64 {
+	margin: 64px !important
+}
+.m-top {
+	margin-top: 16px !important
+}
+.m-bottom {
+	margin-bottom: 16px !important
+}
+.m-left {
+	margin-left: 16px !important
+}
+.m-right {
+	margin-right: 16px !important
+}
+
+/*Padding */
+.p-tiny {
+	padding: 2px 4px !important
+}
+.p-small {
+	padding: 4px 8px !important
+}
+.p-medium,.padding {
+	padding: 8px 16px !important
+}
+.p-large {
+	padding: 12px 24px !important
+}
+.p-xlarge {
+	padding: 16px 32px !important
+}
+.p-xxlarge {
+	padding: 24px 48px !important
+}
+.p-jumbo {
+	padding: 32px 64px !important
+}
+.p-0 {
+	padding: 0 !important
+}
+.p-4 {
+	padding-top: 4px !important
+	;padding-bottom: 4px !important
+}
+.p-8 {
+	padding-top: 8px !important;
+	padding-bottom: 8px !important
+}
+.p-16 {
+	padding-top: 16px !important;
+	padding-bottom: 16px !important
+}
+.p-24 {
+	padding-top: 24px !important;
+	padding-bottom: 24px !important
+}
+.p-32 {
+	padding-top: 32px !important;
+	padding-bottom: 32px !important
+}
+.p-48 {
+	padding-top: 48px !important;
+	padding-bottom: 48px !important
+}
+.p-64 {
+	padding-top: 64px !important;
+	padding-bottom: 64px !important
+}
+.p-top {
+	padding-top: 8px !important
+}
+.p-bottom {
+	padding-bottom: 8px !important
+}
+.p-left {
+	padding-left: 16px !important
+}
+.p-right {
+	padding-right: 16px !important
 }
 
 /* Forms */
@@ -265,7 +401,12 @@ body {
 	overflow:hidden;
 	border: 1px solid #ccc;
 	height: 34px;
-	padding: 6px 12px;
+	padding: 4px 12px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
 /* Colors */
