@@ -150,7 +150,7 @@ body {
 	overflow: initial;
 	word-wrap: normal;
 }
-a:visited {
+a {
 	color: inherit !important;
 }
 .fixed-bg {
