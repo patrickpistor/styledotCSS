@@ -150,8 +150,11 @@ body {
 	overflow: initial;
 	word-wrap: normal;
 }
+a:visited {
+	color: inherit !important;
+}
 .fixed-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("bg.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("DSCF7028.JPG");
 	width:100vw; 
 	height:100vh;
     background-attachment: fixed;
@@ -184,7 +187,21 @@ body {
 	opacity:0.60;
 	text-shadow:1px 1px 0 #444;
 }
-
+.img-xs {
+	width: 30%;
+}
+.img-s {
+	width: 50%;
+}
+.img-m {
+	width: 85%;
+}
+.img-l {
+	width: 100%;
+}
+.img-xl {
+	width: 135%;
+}
 
 
 /* Text */
@@ -307,19 +324,29 @@ i.color-circle {
 }
 
 /* Navigation */
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.navbar li {
+    float: left;
+}
+
 .sidebar {
+	list-style-type: none;
 	height: 100vh;
 	width: 15%;
 }
 .sidebar ul {
 	list-style-type: none;
 	margin: 0;
-	overflow: auto;
 	padding: 0;
 }
-.sidebar li a {
+.sidebar li a, .navbar li a {
 	display: block;
-	padding: 8px 0 8px 16px;
+	padding: 8px 8px 8px 16px;
 	text-decoration: none;
 }
 
