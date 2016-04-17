@@ -154,7 +154,8 @@ a:visited {
 	color: inherit !important;
 }
 .fixed-bg {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("DSCF7028.JPG");
+	/* Put this line as a style attribute in the DIV */
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('DSCF7028.JPG'); */
 	width:100vw; 
 	height:100vh;
     background-attachment: fixed;
